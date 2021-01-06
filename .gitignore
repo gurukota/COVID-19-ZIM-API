@@ -1,6 +1,5 @@
 node_modules/
 .env
-*.tgz
 logs
 *.log
 npm-debug.log*

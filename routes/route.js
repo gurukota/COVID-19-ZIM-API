@@ -20,7 +20,7 @@ router.get('/summary', (req, res) => {
 
       res.json({
         'Active cases': confirmed,
-        'Cured/Discharged/Migrated': cured,
+        'Recovered': cured,
         Death: death,
         'Total Cases': total,
       });

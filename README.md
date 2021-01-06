@@ -55,7 +55,7 @@ Expected Output:
 {
   name:'name_of_province',
   confirmedNational:'Total Confirmed cases',
-  cured:'Cured/Discharged/Migrated',
+  cured:'Recovered',
   death:'Death',
   total:'Total Cases'
 }
@@ -74,6 +74,6 @@ Expected Output:
 
 
 ## Data Source
-[This](http://www.mohcc.gov.zw/) is the source of data for the APIs. This data is officially provide by the Govt. of India.
+[This](http://www.mohcc.gov.zw/) is the source of data for the APIs. This data is officially provide by the Govt. of Zimbabwe.
 
 

@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+var MongoClient = require('mongodb').MongoClient;
 
 module.exports = async () => {
     
     try {
-        await mongoose.connect(process.env.MONGODB_URL,{
+        await MongoClient.connect(process.env.MONGODB_URI,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         })

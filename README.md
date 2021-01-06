@@ -41,15 +41,6 @@ If there was no error, open Postman and create and send a new get request to:
 http://localhost:3000/
 ```
 
-Expected Output:
-
-```
-{
-	message: "Welcome!"
-}
-```
-
-
 ## Response
 ```
 {

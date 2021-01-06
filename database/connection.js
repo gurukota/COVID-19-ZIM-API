@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 module.exports = async () => {
-    const url = "mongodb+srv://tinman:tinman@cluster0.3vqhy.mongodb.net/covid?retryWrites=true&w=majority"
+    // const url = "mongodb+srv://tinman:tinman@cluster0.3vqhy.mongodb.net/covid?retryWrites=true&w=majority"
     try {
-        await mongoose.connect(url,{
+        await mongoose.connect(MONGODB_URI,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         })

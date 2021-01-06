@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}));
 app.use(require('./routes/route'));
 app.use('/', (req, res)=>{
-    res.send({
+    res.json({
         "/:": "Covid 19 API Zimbabwe",
         "/summary:": "Covid 19 API Zimbabwe",
         "/provinces:": "Covid 19 API Zimbabwe",

@@ -1,4 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
+require('dotenv').config();
 
 module.exports = async () => {
     

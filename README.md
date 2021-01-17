@@ -46,7 +46,7 @@ http://localhost:3000/
 {
   name:'name_of_province',
   confirmedNational:'Total Confirmed cases',
-  cured:'Recovered',
+  recovered:'Recovered',
   death:'Death',
   total:'Total Cases'
 }
@@ -54,12 +54,13 @@ http://localhost:3000/
 
 ## Routes
 
-| S.No. | Route                     | Method | Description                                         |
-|-------|---------------------------|--------|-----------------------------------------------------|
-| 1.    | /                         | GET    | Welcome to APIs                                     |
-| 2.    | /summary                  | GET    | Total data containing deaths and cases in Zimbabwe  |
-| 3.    | /provinces                | GET    | Total data of all provinces                         |
-| 4.    | /province/:provincename   | GET    | Get province details                                |
+| S.No. | Route              | Method | Description                                   |
+|-------|-----------------------------|-------------|---------------------------------|
+| 1.    | /                  | GET    | Welcome to APIs                               |
+| 2.    | /daily             | GET    | Summary of daily data                         |
+| 3.    | /cdaily            | GET    | Cumulative daily data                         |
+| 4.    | /provinces         | GET    | Summary of daily data of all provinces        |
+| 5.    | /cprovinces        | GET    | Cumulative data of every province             |
 
 
 

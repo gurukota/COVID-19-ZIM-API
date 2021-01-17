@@ -11,9 +11,11 @@ app.use(require('./routes/route'));
 app.use('/', (req, res)=>{
     res.json({
         "/": "GET || Welcome to APIs",
-        "/summary": "GET || Total data contai…aths and cases in Zimbabwe",
-        "/provinces": "GET || Total data of every state together",
-        "/province/:provincename": "GET || Total data of everything of particular"
+        "/daily": "GET || Summary of daily data",
+        "/cdaily": "GET || Cumulative daily data",
+        "/provinces": "GET || Summary of daily data of all provinces",
+        "/cprovinces": "GET || Cumulative data of every province",
+
     });
 });
 const port = process.env.PORT || 3001

@@ -29,10 +29,10 @@ module.exports.getDailyUpdate = async () => {
                 recovered = recovered+parseInt(d['recovered']);
                 deaths = deaths+parseInt(d['deaths']);
             });
-            result.Cases = cases;
-            result.Active = active;
-            result.Recoverd = recovered;
-            result.Deaths = deaths;
+            result.cases = cases;
+            result.active = active;
+            result.recoverd = recovered;
+            result.deaths = deaths;
         })
         return result;
     } catch (error) {
@@ -72,11 +72,11 @@ module.exports.getDailyCumulative = async () => {
                 deaths = deaths+parseInt(d['deaths']);
                 tests = tests+parseInt(d['tests']);
             });
-            result.Cases = cases;
-            result.Active = active;
-            result.Recoverd = recovered;
-            result.Deaths = deaths;
-            result.Tests =tests;
+            result.cases = cases;
+            result.active = active;
+            result.recoverd = recovered;
+            result.deaths = deaths;
+            result.tests =tests;
         })
         await OldData.find()
         .then((data) => {

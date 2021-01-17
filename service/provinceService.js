@@ -74,7 +74,7 @@ module.exports.getDailyCumulative = async () => {
             });
             result.cases = cases;
             result.active = active;
-            result.recoverd = recovered;
+            result.recovered = recovered;
             result.deaths = deaths;
             result.tests =tests;
         })
@@ -89,9 +89,9 @@ module.exports.getDailyCumulative = async () => {
                 recovered = recovered+parseInt(d['recovered']);
                 deaths = deaths+parseInt(d['deaths']);
             });
-            result.Cases += cases;
-            result.Recoverd += recovered;
-            result.Deaths += deaths;
+            result.cases += cases;
+            result.recovered += recovered;
+            result.deaths += deaths;
         })
         return result;
     } catch (error) {

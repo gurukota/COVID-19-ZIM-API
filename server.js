@@ -13,8 +13,8 @@ app.use('/', (req, res)=>{
         "/": "GET || Welcome to APIs",
         "/daily": "GET || Summary of daily data",
         "/cdaily": "GET || Cumulative daily data",
-        "/provinces": "GET || Summary of daily data of all provinces",
-        "/cprovinces": "GET || Cumulative data of every province",
+        "/province": "GET || Summary of daily data of all provinces",
+        "/cprovince": "GET || Cumulative data of every province",
 
     });
 });

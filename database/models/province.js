@@ -2,26 +2,30 @@ const mongoose = require('mongoose');
 const ProvinceSchema = mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: true
+  },
+  cases: {
+    type: Number,
+    required: true
   },
   active: {
     type: Number,
-    require: true,
+    required: true
   },
-  cured: {
+  recovered: {
     type: Number,
-    require: true,
+    required: true
   },
-  death: {
+  deaths: {
     type: Number,
-    require: true,
+    required: true
   },
-  total: {
+  tests: {
     type: Number,
-    require: true,
+    required: true
   }
+  
 }, {
-  timestamps: true,
   toObject: {
     transform: (doc, ret, options) => {
       ret.id = ret._id;

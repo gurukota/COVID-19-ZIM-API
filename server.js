@@ -17,6 +17,6 @@ app.use('/', (req, res)=>{
     });
 });
 const port = process.env.PORT || 3001
-app.listen(port, ()=>{
-    console.log('Tapinda');
+app.listen(port, () => {
+    console.log('Server started successully');
 })

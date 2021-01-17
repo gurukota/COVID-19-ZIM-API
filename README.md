@@ -44,11 +44,11 @@ http://localhost:3000/
 ## Response
 ```
 {
-  name:'name_of_province',
-  confirmedNational:'Total Confirmed cases',
-  recovered:'Recovered',
-  death:'Death',
-  total:'Total Cases'
+  name:'name of province',
+  cases:'Total Confirmed cases',
+  recovered:'Recoveries',
+  deaths:'Death',
+  test: 'PCR tests'
 }
 ```
 
@@ -59,8 +59,8 @@ http://localhost:3000/
 | 1.    | /                  | GET    | Welcome to APIs                               |
 | 2.    | /daily             | GET    | Summary of daily data                         |
 | 3.    | /cdaily            | GET    | Cumulative daily data                         |
-| 4.    | /provinces         | GET    | Summary of daily data of all provinces        |
-| 5.    | /cprovinces        | GET    | Cumulative data of every province             |
+| 4.    | /province          | GET    | Summary of daily data of all provinces        |
+| 5.    | /cprovince         | GET    | Cumulative data of every provinces            |
 
 
 

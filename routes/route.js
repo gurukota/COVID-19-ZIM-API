@@ -6,8 +6,8 @@ const provinceController = require('../controller/provinceController');
 router.post('/new', provinceController.postProvince);
 router.get('/daily', provinceController.getDailyUpdate);
 router.get('/cdaily', provinceController.getDailyCumulative);
-router.get('/provinces', provinceController.getProvinces)
-router.get('/cprovinces', provinceController.getProvinceCumulative);
+router.get('/province', provinceController.getProvinces)
+router.get('/cprovince', provinceController.getProvinceCumulative);
 
 
 
